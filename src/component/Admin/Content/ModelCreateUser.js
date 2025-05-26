@@ -115,7 +115,7 @@ console.log('modelcreate')
                 </select>
             </div>
             <div className="col-md-12 upload ">
-                <label className="form-label label-Upload" htmlFor='labelUpload'>     <IoIosAddCircleOutline />      Upload Image</label> 
+                <label className="form-label label-Upload" htmlFor='labelUpload'> <IoIosAddCircleOutline />      Upload Image</label> 
                 <input 
                 type="file" 
                 id="labelUpload" hidden 

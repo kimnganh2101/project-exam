@@ -1,0 +1,43 @@
+.question-content{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 15px;
+    .group-upload{
+        
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        .label-up{
+            font-size: 25px;
+            color: purple;
+       
+
+        }
+        
+    }
+}
+.ansewer-content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 3px;
+    .answer-name{
+        width: 60%;
+    }
+    .iscorrect{
+        font-size: 20px;
+    }
+    
+}
+.icon-add {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.icon-remove {
+    font-size: 30px;
+    color: green;
+    cursor: pointer;
+}

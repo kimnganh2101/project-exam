@@ -3,7 +3,7 @@ import { useLocation, useParams } from "react-router-dom";
 import { GetQuestionByIdQuiz, postSubmitQuiz } from "../../service/User";
 import './QuizDetail.scss'
 import _ from 'lodash'
-import Question from "./Question";
+import Question from "./ListQuestion";
 import Modalresult from "./Modalresult";
 const QuizDetail = (props) => {
     const [dataQuiz, setDataQuiz] = useState([]);

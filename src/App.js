@@ -3,6 +3,7 @@ import './App.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { increaseCounter, decreaseCounter } from './redux/action/counterAction';
 import 'bootstrap/dist/css/bootstrap.min.css';
+  import 'react-perfect-scrollbar/dist/css/styles.css';
 import Headernav from './component/Header';
 import { Outlet } from 'react-router-dom';
 const App = () => {

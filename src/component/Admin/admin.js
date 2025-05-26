@@ -3,8 +3,7 @@ import "./Admin.scss";
 import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
-import ManagerUser from "./Content/ManagerUser";
-
+  import PerfectScrollbar from 'react-perfect-scrollbar'
 import "react-toastify/dist/ReactToastify.css";
 import { Outlet } from "react-router-dom";
   const Admin = (props) => {
@@ -19,8 +18,11 @@ import { Outlet } from "react-router-dom";
         <div className="Admin-Header">
           <FaBars onClick={() => setcolapsed(!collapsed)} />
         </div>
-        <div className="Admin-Body  d-flex">
-           <Outlet /> 
+        <div className="Admin-Body d-flex mx-5">
+          <PerfectScrollbar>
+          <Outlet /> 
+        </PerfectScrollbar>
+           
         </div>
       </div>
     </div>

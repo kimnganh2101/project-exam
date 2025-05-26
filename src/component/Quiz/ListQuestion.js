@@ -10,7 +10,6 @@ const Question = (props) => {
         props.handleCheckbox(questionId, answerId)
         
     }
-
     return (
         <div className="q-child-content">
             <div className="q-image">

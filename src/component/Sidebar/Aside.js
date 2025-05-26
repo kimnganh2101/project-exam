@@ -62,7 +62,7 @@ const navigate = useNavigate();
           >
             <MenuItem onClick={()=>handleManager()} > Quản lý User</MenuItem>
             <MenuItem onClick={()=>navigate('/admin/manager/quiz')}> Quản lý bài Quiz</MenuItem>
-            <MenuItem> Quản lý Admin</MenuItem>
+            <MenuItem onClick={()=>navigate('/admin/manager-question')}> Quản lý Question</MenuItem>
           </SubMenu>
 
         </Menu>

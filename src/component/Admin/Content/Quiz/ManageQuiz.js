@@ -2,6 +2,8 @@ import { useState } from "react";
 import Select from 'react-select';
 import { postCreateNewQuiz } from "../../../../service/User";
 import { toast } from "react-toastify";
+import TableQuiz from "../../../Quiz/TableQuiz";
+import Accordion from 'react-bootstrap/Accordion';
 const ManagerQuiz = () => {
     const [name, setName] = useState("")
     const [description, setDescription] = useState("")
@@ -36,12 +38,14 @@ const ManagerQuiz = () => {
             toast.error(res.EM)
         }
     }
-
-
     return (
         <div>
-       
-                <fieldset className="border rounded-3 p-2 mx-5">
+    
+            <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          <fieldset className="border rounded-3 p-2 ">
                 <legend className="float-none w-auto">Add new Quiz</legend>
                 <div className="form-floating mb-3">
                     <input type="text" className="form-control"  placeholder="Name" value={name} onChange={(event)=>setName(event.target.value)}/>
@@ -49,8 +53,8 @@ const ManagerQuiz = () => {
                 </div>
                 <div className="form-floating my-3">
                         <input type="text" className="form-control" placeholder="Description" value={description} onChange={(event) => setDescription(event.target.value)} />
-                    <label htmlFor ="floatingInput">Description</label>
-                </div>
+                        <label htmlFor ="floatingInput">Description</label>
+                            </div>
                     <div className="more-action my-3 ">
                         <div>
                             <label htmlFor ="formFileLg" className="form-label">Large file input example</label>
@@ -72,6 +76,16 @@ const ManagerQuiz = () => {
                         Save 
                     </button>
             </fieldset>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+
+
+            <div className="list-item">
+                <TableQuiz
+                />
+
+            </div>
            
         </div>
 );

@@ -14,6 +14,8 @@ import { ToastContainer, toast } from "react-toastify";
 import QuizDetail from "./component/Quiz/QuizDetail";
 import NewUser from "./component/NewUser";
 import ManagerQuiz from "./component/Admin/Content/Quiz/ManageQuiz";
+import ListQuestion from "./component/Quiz/ListQuestion";
+import Question from "./component/Admin/Content/Quiz/Question/Question";
 
 const Layout = () => {
     return (
@@ -23,11 +25,12 @@ const Layout = () => {
                   <Route index element = {<Homepage/>}/>
                   <Route path='/user' element = {<NewUser/>}/>
           </Route>
-          
+         
           <Route path="/user/:id" element = {<QuizDetail/>}/>
           <Route path='/admin' element = {<Admin/>}>                 
             <Route path='manager' element={<ManagerUser />} />
             <Route path='manager/quiz' element={<ManagerQuiz />} />
+            <Route path='manager-question' element={<Question />} />
 
                 
           </Route>
