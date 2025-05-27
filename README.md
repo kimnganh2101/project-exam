@@ -1,5 +1,13 @@
 #Node.js v14.17.0
 
+[Demo Giao diện] <img width="856" alt="image" src="https://github.com/user-attachments/assets/47859665-58a3-49be-bf55-43910e3cbe7a" />
+
+Ứng dụng đơn giản giúp bạn thêm được thêm xóa sửa bài kiểm tra và câu hỏi. 
+Trả về số điểm ngay lập tức khi bạn bấm hoàn thành và chức năng lưu lại điểm thi trọng database
+Ứng dụng có authentication, pagination, filter, search, drag-and-drop, upload file,...
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,3 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
